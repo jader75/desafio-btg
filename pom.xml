@@ -73,12 +73,8 @@
 			<groupId>io.rest-assured</groupId>
 			<artifactId>spring-web-test-client</artifactId>
 		</dependency>
-		
-
-
 
 	</dependencies>
-
 
 	<build>
 		<plugins>

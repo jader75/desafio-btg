@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "4186b1e5-7e05-4892-9928-3cf5f46031fb",
+		"name": "DesafioBTG",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1188521"
+	},
+	"item": [
+		{
+			"name": "Valor Total Pedido",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pedido/3/total",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pedido",
+						"3",
+						"total"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Quantidade Pedidos Por Cliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pedido/cliente/2/quantidade",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pedido",
+						"cliente",
+						"2",
+						"quantidade"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pedidos Realizados Por Cliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pedido/cliente/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pedido",
+						"cliente",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Enviar Pedido",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"pedidoId\": null,\r\n        \"cliente\": {\r\n            \"clienteId\": 2\r\n        },\r\n        \"itens\": [\r\n            {\r\n                \"itemId\": {\r\n                    \"pedidoId\": null,\r\n                    \"produtoId\": 1\r\n                },\r\n                \"quantidade\": 30\r\n            },\r\n            {\r\n                \"itemId\": {\r\n                    \"pedidoId\": null,\r\n                    \"produtoId\": 4\r\n                },\r\n                \"quantidade\": 20\r\n            },\r\n            {\r\n                \"itemId\": {\r\n                    \"pedidoId\": null,\r\n                    \"produtoId\": 6\r\n                },\r\n                \"quantidade\": 10\r\n            },\r\n            {\r\n                \"itemId\": {\r\n                    \"pedidoId\": null,\r\n                    \"produtoId\": 8\r\n                },\r\n                \"quantidade\": 15\r\n            },\r\n            {\r\n                \"itemId\": {\r\n                    \"pedidoId\": null,\r\n                    \"produtoId\": 3\r\n                },\r\n                \"quantidade\": 33\r\n            }\r\n        ]\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pedido/criar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pedido",
+						"criar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
