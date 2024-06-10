@@ -26,13 +26,15 @@ git clone https://github.com/jader75/desafio-btg.git
 - Executar a composição docker da aplicação SpringBoot e RabbitMQ:
 ```
 docker-compose up
+- Acessar aplicação em `http://localhost:8080`.
 
-## Arquitetura
+###Diagrama de Arquitetura
+![Desenho de Arquitetura](imagens/DiagramaDeArquitetura.jpg)
 
+###Modelo de Dados
+![Modelo de Dados](imagens/ModeloDeDados.jpg)
 
 ## API
-
-
 ###Coleção Postman versão 2.1
 Arquivo: **DesafioBTG.postman_collection.json**
 
