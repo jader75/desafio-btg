@@ -1,5 +1,8 @@
-# Desafio BTG
+<h1 align="center"  style="font-size:large;"> Desafio BTG</h1>
+<p align="center">
 Projeto realizado a partir do desafio proposto pelo BTG
+</p>
+
 
 ## Tecnologias
  
@@ -34,7 +37,13 @@ docker-compose up
 ###Modelo de Dados
 ![Modelo de Dados](imagens/ModeloDeDados.jpg)
 
+###Diagrama de Implantação
+![Diagrama de Implantação](imagens/DiagramaDeImplantacao.jpg)
+
 ## API
+
+
+
 ###Coleção Postman versão 2.1
 Arquivo: **DesafioBTG.postman_collection.json**
 
