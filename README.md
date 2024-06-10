@@ -29,49 +29,9 @@ docker-compose up
 
 ## Arquitetura
 
-![Desenho de Arquitetura](.github/Desenho%20de%20Arquitetura.png)
-
-![Diagrama de Atividades](.github/Diagrama%20de%20Atividades.png)
 
 ## API
 
-- http :8080/transaction value=100.0 payer=1 payee=200
-```
-HTTP/1.1 200
-Connection: keep-alive
-Content-Type: application/json
-Date: Tue, 05 Mar 2024 19:07:52 GMT
-Keep-Alive: timeout=60
-Transfer-Encoding: chunked
-
-{
-    "createdAt": "2024-03-05T16:07:50.749774",
-    "id": 20,
-    "payee": 2,
-    "payer": 1,
-    "value": 100.0
-}
-```
-
-- http :8080/transaction
-```
-HTTP/1.1 200
-Connection: keep-alive
-Content-Type: application/json
-Date: Tue, 05 Mar 2024 19:08:13 GMT
-Keep-Alive: timeout=60
-Transfer-Encoding: chunked
-
-[
-    {
-        "createdAt": "2024-03-05T16:07:50.749774",
-        "id": 20,
-        "payee": 2,
-        "payer": 1,
-        "value": 100.0
-    }
-]
-```
 
 ###Coleção Postman versão 2.1
 Arquivo: **DesafioBTG.postman_collection.json**
