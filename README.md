@@ -1,7 +1,7 @@
-<h1 align="center"  style="font-size:large;"> Desafio BTG</h1>
-<p align="center">
+<div  align="center" style="text-align: center; font-size:xx-large;font-weight: bold;"> Desafio BTG</div>
+<div align="center">
 Projeto realizado a partir do desafio proposto pelo BTG
-</p>
+</div>
 
 
 ## Tecnologias
@@ -26,9 +26,11 @@ Projeto realizado a partir do desafio proposto pelo BTG
 ```
 git clone https://github.com/jader75/desafio-btg.git
 ```
-- Executar a composição docker da aplicação SpringBoot e RabbitMQ:
+<p/>
+ - Executar a composição docker da aplicação SpringBoot e RabbitMQ:
 ```
 docker-compose up
+<p/>
 - Acessar aplicação em `http://localhost:8080`.
 
 ###Diagrama de Arquitetura
@@ -41,9 +43,69 @@ docker-compose up
 ![Diagrama de Implantação](imagens/DiagramaDeImplantacao.jpg)
 
 ## API
+<li>Valor Total Pedido - Metodo GET</li>
 
+```
+http://localhost:8080/pedido/[idPedido]/total
+```
+<li>Quantidade Pedidos Por Cliente - Metodo GET</li>
 
+```
+http://localhost:8080/pedido/cliente/[idCliente]/quantidade
+```
+<li>Pedidos Realizados Por Cliente - Metodo GET</li>
 
+```
+http://localhost:8080/pedido/cliente/[idCliente]
+```
+<li>Enviar Pedido - Metodo POST</li>
+
+```
+http://localhost:8080/pedido/criar
+```
+
+BODY
+
+```
+{
+        "cliente": {
+            "clienteId": 2
+        },
+        "itens": [
+            {
+                "itemId": {
+                    "produtoId": 1
+                },
+                "quantidade": 30
+            },
+            {
+                "itemId": {
+                    "produtoId": 4
+                },
+                "quantidade": 20
+            },
+            {
+                "itemId": {
+                    "produtoId": 6
+                },
+                "quantidade": 10
+            },
+            {
+                "itemId": {
+                    "produtoId": 8
+                },
+                "quantidade": 15
+            },
+            {
+                "itemId": {
+                    "produtoId": 3
+                },
+                "quantidade": 33
+            }
+        ]
+    }
+}
+```
 ###Coleção Postman versão 2.1
 Arquivo: **DesafioBTG.postman_collection.json**
 
